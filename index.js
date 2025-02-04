@@ -16,8 +16,8 @@ const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES"] });
 
 client.on("message", message => {
   if (message.content === "Ping") {
-  message.channel.send ("Pong!")
-    client.user.setActivity("Ping-Pong", { type: "PLAYING"})
+    message.channel.send("Pong!")
+    client.user.setActivity("Ping-Pong", { type: "PLAYING" })
   }
 })
 
